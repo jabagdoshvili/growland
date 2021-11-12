@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+  <title>GrowLand</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/styles/style.css">
+  <style>
+    .result {
+      padding-top: 50px;
+    }
+    
+  </style>
+
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              GrowLand
+            </span>
+          </a>
+          <div class="" id="">
+            <div class="User_option">
+              <form class="form-inline my-2  mb-3 mb-lg-0">
+                <input type="search" placeholder="Search" />
+                <button class="btn   my-sm-0 nav_search-btn" type="submit"></button>
+              </form>
+            </div>
+
+            <div class="custom_menu-btn">
+              <button onclick="openNav()">
+                <span class="s-1"> </span>
+                <span class="s-2"> </span>
+                <span class="s-3"> </span>
+              </button>
+            </div>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="index.html">მთავარი</a>
+                <a href="about.html">ჩვენ შესახებ</a>
+                <a href="service.html">სერვისები</a>
+                <a href="goal.html">ის რაც ყველას აინტერესებს</a>
+                <a href="map.html">გასაყიდი მიწების რუკა</a>
+                <a href="contact.html">კონტაქტი</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+  </div>
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="detail-box">
+          <div class="heading_container" style="width: 100%;">
+            <h2 style="text-align: center;">
+              ყველაფერი რაც გჭირდება არის აქ ! გთხოვთ შეავსოთ ფორმა
+            </h2>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="img-box">
+            <img src="images/about-img.png" alt="" />
+          </div>
+        </div>
+        <div class="col-md-9">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">სახელი</label>
+                <input type="text" class="form-control" id="inputEmail4" placeholder="სახელი">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword4">გვარი</label>
+                <input type="text" class="form-control" id="inputPassword4" placeholder="გვარი">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">ადგილმდებარეობა</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="ადგილმდებარეობა">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="inputState">რისი მოყვანა გსურს?</label>
+                <select id="inputState" class="form-control">
+                  <option selected>არჩევა...</option>
+                  <option>ვაშლი</option>
+                  <option>მსხალი</option>
+                  <option>მარწყვი</option>
+                  <option>ყურძენი</option>
+                  <option>ქლიაბი</option>
+                  <option>ბანანი</option>
+                  <option>საზამთრო</option>
+                  <option>ნესვი</option>
+                  <option>კიტრი</option>
+                  <option>პამიდორი</option>
+                  <option>ლეღვი</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="inputState">აირჩიე მიწა</label>
+                <select id="inputState" class="form-control">
+                  <option selected>არჩევა...</option>
+                  <option>მიწა 1</option>
+                  <option>მიწა 2</option>
+                  <option>მიწა 3</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  ვეთანხმები წესებს და პირობებს
+                </label>
+              </div>
+            </div>
+            <a  href="#" class="btn btn-primary calculate">გამოთვლა</a>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="result"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+<!-- info section -->
+
+<section class="info_section  layout_padding2">
+  <div class="container">
+    <div class="social_container">
+      <div class="social_box">
+        <a href="">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+        <a href="">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+        <a href="">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+        <a href="">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a href="">
+          <i class="fa fa-youtube" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+    <div class="contact_items">
+      <a href="">
+        <div class="item ">
+          <div class="img-box ">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+          </div>
+          <div class="detail-box">
+            <p>
+              Location
+            </p>
+          </div>
+        </div>
+      </a>
+      <a href="">
+        <div class="item ">
+          <div class="img-box ">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+          </div>
+          <div class="detail-box">
+            <p>
+              Call +995 555 55 55 55
+            </p>
+          </div>
+        </div>
+      </a>
+      <a href="">
+        <div class="item ">
+          <div class="img-box ">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </div>
+          <div class="detail-box">
+            <p>
+              growland@gmail.com
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- end info section -->
+
+
+<!-- footer section -->
+<footer class="container-fluid footer_section ">
+  <p>
+    &copy; <span id="displayDate"></span> All Rights Reserved. GrowLand</a>
+  </p>
+</footer>
+<!-- end  footer section -->
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+
+  <script>
+    $('.calculate').on('click',function(e){ 
+      e.preventDefault();
+      $('.result').html (`
+
+
+          
+      <div class="skills">
+  <ul class="lines">
+    <li class="line l--0">
+      <span class="line__label title">
+        დონეები:
+      </span>
+    </li>
+    <li class="line l--25">
+      <span class="line__label">
+        ნაკლებად
+      </span>
+    </li>
+    <li class="line l--50">
+      <span class="line__label">
+        საშუალოდ
+      </span>
+    </li>
+    <li class="line l--75">
+      <span class="line__label">
+        კარგი
+      </span>
+    </li>
+    <li class="line l--100">
+      <span class="line__label">
+        ძალიან კარგი
+      </span>
+    </li>
+  </ul>
+  
+  <div class="charts">
+    <div class="chart chart--dev">
+      <span class="chart__title">შედეგები:</span>
+      <ul class="chart--horiz">
+        <li class="chart__bar" style="width: 98%;">
+          <span class="chart__label">
+            მოსავლიანობა
+          </span>
+        </li>
+        <li class="chart__bar" style="width: 98%;">
+          <span class="chart__label">
+            გარემო პირობების მაჩვენებელი
+          </span>
+        </li>
+        <li class="chart__bar" style="width: 70%;">
+          <span class="chart__label">
+            შემოსავლის მაჩვენებული
+          </span>
+        </li>
+        <li class="chart__bar" style="width: 60%;">
+          <span class="chart__label">
+            კლიმატის საშიშროება
+          </span>
+        </li>
+        <li class="chart__bar" style="width: 25%;">
+          <span class="chart__label">
+            სადაზღვევო ხარჯი
+          </span>
+        </li>
+        <li class="chart__bar" style="width: 55%;">
+          <span class="chart__label">
+            საჭირო ტექნიკა
+          </span>
+        </li>
+        <li class="chart__bar" style="width: 50%;">
+          <span class="chart__label">
+            მუშა ხელის პროცენტული მაჩვენებელი
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+      
+      `)
+    });
+  </script>
+  <script src="js/bootstrap.js"></script>
+  <!-- End Google Map -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+
+</body>
+
+</html>
