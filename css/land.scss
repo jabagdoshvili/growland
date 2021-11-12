@@ -1,0 +1,24 @@
+ul{
+    list-style-type: none;
+}
+
+img{
+  max-width: 100%;
+  max-height: 200px;
+}
+
+ul.lands{
+    width: 90%;
+    margin: auto;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    li a{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: #000;
+    }
+}
